@@ -11,9 +11,9 @@ for(I, Max, F) -> [F(I) | for(I+1, Max, F)].
 % quick sort alogrithm
 qsort([]) -> [];
 qsort([Pivot | T]) ->  					% split list into head and rest of list
-	qsort([X || X <- T, X < Pivot]) 	% put all items less than pivot into new list and sort that, pre-pend it to pivot
+	qsort([X || X <- T, X < Pivot]) 	% put all items less than pivot into new list, sort it and concat it to the left of pivot
 	++ [Pivot] ++						% next have pivot
-	qsort([X || X <- T, X >= Pivot]).	% put all items
+	qsort([X || X <- T, X >= Pivot]).	% put all items greater than pivot into list, sort it and concat it to the right of pivot
 
 %
 % anagrams - permutations sample
