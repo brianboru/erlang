@@ -15,3 +15,15 @@
 % #todo{status=Status} = X. 
 % this will extract the value of status into the Status variable
 % from the record instance X
+
+%
+% records are just "special" tuples
+% if we tell the REPL to forget the record information
+% then the data just reverts to a tuple
+%
+% try using:
+%	rf(<record name>)
+% then look at a variable that was set to the record
+% and you should see that all values are there but
+% the record structure
+%
