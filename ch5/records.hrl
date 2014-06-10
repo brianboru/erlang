@@ -27,3 +27,13 @@
 % and you should see that all values are there but
 % the record structure
 %
+% REPL Sample:
+%
+% 27> X1.
+% #todo{status = urgent,who = joe,text = "fix book"}
+% 28> rf(todo).
+% ok
+% 29> X1.
+% {todo,urgent,joe,"fix book"}
+% 30>
+% 
