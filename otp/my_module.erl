@@ -54,6 +54,7 @@ bin_test(Bin) ->
     [{match, Country, Currency} || {bin, {range, Low, High}, {country, Country}, {currency, Currency}} <- BinList, Bin >= Low, Bin =< High].
 
 %% macros example
+%% test comment for git change in emacs
 current_position()->
     [{module, ?MODULE}, {file, ?FILE}, {line, ?LINE}].
 		 
